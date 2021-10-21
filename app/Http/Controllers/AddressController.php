@@ -15,7 +15,7 @@ class AddressController extends Controller
         return $request->addresses;
     }
 
-    public function show(ShowRequest $request, Address $address)
+    public function show(ShowRequest $request, Address $address): Address
     {
         return $address;
     }
